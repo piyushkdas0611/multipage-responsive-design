@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+:root {
+    --nav-color:#563d7c;
+    --text-color:#c4b4db;
+    --hover:#816e9c;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Castoro Titling', cursive;
+}
+body::before {
+    content: "";
+    position: absolute;
+    background: url("./images/pawel-czerwinski-009elgvBM_A-unsplash.jpg");
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.89;
+}
+.navbar {
+    padding: 1rem;
+    background-color: var(--nav-color);
+    box-shadow: 0 0 40px  rgb(169, 205, 235);
+}
+.navbar-header {
+    color: var(--text-color);
+}
+.nav-link {
+    color: var(--text-color);
+}
+.container h1 {
+    font-weight: 700;
+    margin-top: 2rem;
+}
+main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .container {
+    text-align: center;
+}
+main .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 5rem;
+    border: none;
+    padding: 5rem;
+    border-radius: 12px;
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    box-shadow: 0 0 40px rgb(169, 205, 235);
+}
+main .login:hover {
+    scale: 1.2;
+    transition: all 0.5s;
+}
+main .login h3 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+main .login a {
+    width: 100%;
+}
+main .login a button {
+    padding: 12px;
+    border-radius: 9px;
+    width: 100%;
+    color: var(--nav-color);
+    box-shadow: 0 0 2px 2px gray;
+    border: none;
+    margin-bottom: 1rem;
+}
+main .login a button:hover {
+    background-color: var(--hover);
+    color: white;
+    border: none;
+}
+/*Sign IN Styling*/
+.login1 {
+    display: flex;
+    max-width: 1920px;
+    width: 100%;
+    height: 90vh;
+}
+.login1 .signin {
+    margin: 0 auto;
+    align-self: center;
+    width: 90%;
+    max-width: 500px;
+    padding: 5rem;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    box-shadow: 0 0 40px rgb(169, 205, 235);
+}
+.login1 .signin:hover {
+    scale: 1.5;
+    transition: all 0.5s;
+}
+.login1 .signin label, input {
+    margin-bottom: 1rem;
+}
+.login1 .signin a {
+    float: right;
+}
+.login1 .signin .btn-submit {
+    text-align: center;
+}
+.login1 .signin .btn-submit button {
+    width: 100%;
+    border-radius: 11px;
+}
+
+/*Sign Up styling*/
+.login2 {
+    display: flex;
+    max-width: 1920px;
+    width: 100%;
+    height: 90vh;
+}
+.login2 .signup {
+    margin: 0 auto;
+    align-self: center;
+    width: 90%;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    box-shadow: 0 0 40px rgb(169, 205, 235);
+}
+.login2 .signup:hover {
+    scale: 1.1;
+    transition: all 0.5s;
+}
+.login2 .signup label, input {
+    margin-bottom: 1rem;
+}
+.login2 .signup .btn-submit button {
+    width: 100%;
+    border-radius: 11px;
+}
+
+/*Contacts Styling*/
+.container-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    height: 90vh;
+}
+.card{
+    margin: 0 auto;
+    align-self: center;
+    width: 90%;
+    max-width: 440px;
+    text-align: center;
+    padding: 5rem;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    box-shadow: 0 0 40px rgb(169, 205, 235);
+    display: flex;
+}
+.card:hover {
+    scale: 1.2;
+    transition: all 0.5s;
+}
+
+.card img{
+    align-self: center;
+    width: 140px;
+    border-radius: 50%;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 13px rgb(169, 205, 235);
+
+}
+
+.card p{
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 330px;
+}
+
+.card .links img{
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+
+
+
+.card .links img:hover{
+    background: #ffffff;
+    box-shadow: 0 0 10px rgb(169, 205, 235);
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0 10px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    font-weight: medium;
+    box-shadow: 0 0 10px rgb(169, 205, 235);
+    color: black;
+}
+
+@media screen and (max-width:430px) {
+    body {
+        max-width: 430px;
+        height: 100vh;
+        background-size: cover;
+    }
+    body::before{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main {
+        padding: 0;
+    }
+    main .login {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+    }
+    main .login:hover {
+        scale: 1;
+    }
+    main .login1 {
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+        height: 100vh;
+    }
+    .login1 .signin {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        padding: 2rem;
+    }
+    .login1 .signin:hover {
+        scale: none;
+    }
+    .login2 .signup {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .login2 .signup:hover {
+        scale: none;
+        box-shadow: 0 0 1px none;
+    }
+    .container-4 {
+        height: 100vh;
+        padding: 0;
+    }
+    .card {
+        max-width: 100%;
+        width: 100%;
+        height: 100vh;
+        box-shadow: 0 0 1px none;
+        border-radius: 0;
+        margin: 0;
+    }
+    .card:hover {
+        scale: 1;
+        box-shadow: 0 0 1px none;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .login1 .signin a {
+        float: left;
+    }
+}
