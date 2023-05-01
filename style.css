@@ -63,10 +63,6 @@ main .login {
     color: var(--text-color);
     box-shadow: 0 0 40px rgb(169, 205, 235);
 }
-main .login:hover {
-    scale: 1.2;
-    transition: all 0.5s;
-}
 main .login h3 {
     margin-bottom: 2rem;
     font-size: 3rem;
@@ -84,9 +80,10 @@ main .login a button {
     margin-bottom: 1rem;
 }
 main .login a button:hover {
-    background-color: var(--hover);
-    color: white;
     border: none;
+    scale: 1.1;
+    transition: all 1.0s;
+    box-shadow: 0 0 40px rgb(169, 205, 235);
 }
 /*Sign IN Styling*/
 .login1 {
@@ -106,10 +103,6 @@ main .login a button:hover {
     background-color: var(--nav-color);
     color: var(--text-color);
     box-shadow: 0 0 40px rgb(169, 205, 235);
-}
-.login1 .signin:hover {
-    scale: 1.5;
-    transition: all 0.5s;
 }
 .login1 .signin label, input {
     margin-bottom: 1rem;
@@ -136,17 +129,13 @@ main .login a button:hover {
     margin: 0 auto;
     align-self: center;
     width: 90%;
-    max-width: 600px;
-    padding: 2rem;
+    max-width: 500px;
+    padding: 5rem;
     border-radius: 16px;
     backdrop-filter: blur(5px);
     background-color: var(--nav-color);
     color: var(--text-color);
     box-shadow: 0 0 40px rgb(169, 205, 235);
-}
-.login2 .signup:hover {
-    scale: 1.1;
-    transition: all 0.5s;
 }
 .login2 .signup label, input {
     margin-bottom: 1rem;
@@ -178,10 +167,6 @@ main .login a button:hover {
     color: var(--text-color);
     box-shadow: 0 0 40px rgb(169, 205, 235);
     display: flex;
-}
-.card:hover {
-    scale: 1.2;
-    transition: all 0.5s;
 }
 
 .card img{
